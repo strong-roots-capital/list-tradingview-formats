@@ -12,13 +12,11 @@ npm install @strong-roots-capital/list-tradingview-formats
 
 ``` typescript
 import listTradingviewFormats from '@strong-roots-capital/list-tradingview-formats'
-// TODO: describe usage
+
+console.log(listTradingviewFormats())
+//=> ['1', '2', '3', '4', ...]
 ```
 
 ## Related
 
-TODO
-
-## Acknowledgments
-
-TODO
+- [is-tradingview-format](https://github.com/strong-roots-capital/is-tradingview-format)
