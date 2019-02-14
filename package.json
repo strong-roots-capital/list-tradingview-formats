@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/list-tradingview-formats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a list of timeframes in TradingView format",
   "main": "dist/list-tradingview-formats.js",
   "types": "dist/list-tradingview-formats.d.ts",
