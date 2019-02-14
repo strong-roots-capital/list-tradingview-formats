@@ -45,7 +45,7 @@ TODO
 
 ▸ **listTradingviewFormats**(): `string`[]
 
-*Defined in [list-tradingview-formats.ts:27](https://github.com/strong-roots-capital/list-tradingview-formats/blob/645e1a3/src/list-tradingview-formats.ts#L27)*
+*Defined in [list-tradingview-formats.ts:27](https://github.com/strong-roots-capital/list-tradingview-formats/blob/ad06f53/src/list-tradingview-formats.ts#L27)*
 
 TODO: document
 
