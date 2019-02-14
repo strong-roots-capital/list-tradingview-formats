@@ -42,7 +42,7 @@ Related
 
 ▸ **listTradingviewFormats**(): `string`[]
 
-*Defined in [list-tradingview-formats.ts:13](https://github.com/strong-roots-capital/list-tradingview-formats/blob/fb272d7/src/list-tradingview-formats.ts#L13)*
+*Defined in [list-tradingview-formats.ts:13](https://github.com/strong-roots-capital/list-tradingview-formats/blob/9cfa98c/src/list-tradingview-formats.ts#L13)*
 
 Return list of all valid Trading View-formatted timeframes.
 
