@@ -3,7 +3,15 @@
  * Generate a list of timeframes in TradingView format
  */
 
-const fill = require('fill-range')
+
+/* Starts with 1 */
+function list(start: number, end: number): number[] {
+
+    return Array
+        .from({length: end - start + 1})
+        .map((_value, index) => index + 1)
+}
+
 
 /**
  * Return list of all valid Trading View-formatted timeframes.
@@ -11,13 +19,16 @@ const fill = require('fill-range')
  * @returns List of all valid Trading View-formatted timeframes.
  */
 export default function listTradingviewFormats(): string[] {
+
     let timeframes: string[] = []
 
-    fill(1, 1440).forEach((n: number) => timeframes.push(`${n}`))
-    fill(1, 24).forEach((n: number) => timeframes.push(`${n}H`))
-    fill(1, 365).forEach((n: number) => timeframes.push(`${n}D`))
-    fill(1, 52).forEach((n: number) => timeframes.push(`${n}W`))
-    fill(1, 12).forEach((n: number) => timeframes.push(`${n}M`))
+    list(1, 1440).forEach(n => timeframes.push(`${n}`))
+    list(1, 24).forEach(n => timeframes.push(`${n}H`))
+    list(1, 365).forEach(n => timeframes.push(`${n}D`))
+    list(1, 52).forEach(n => timeframes.push(`${n}W`))
+    list(1, 12).forEach(n => timeframes.push(`${n}M`))
+
+    timeframes.push('H', 'D', 'W', 'M')
 
     return timeframes
 }

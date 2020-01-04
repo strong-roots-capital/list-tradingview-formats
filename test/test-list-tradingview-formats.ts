@@ -21,6 +21,11 @@ fill(1, 365).forEach((n: number) => test(defaultListShouldInclude, `${n}D`))
 fill(1, 52).forEach((n: number) => test(defaultListShouldInclude, `${n}W`))
 fill(1, 12).forEach((n: number) => test(defaultListShouldInclude, `${n}M`))
 
+test(defaultListShouldInclude, 'H')
+test(defaultListShouldInclude, 'D')
+test(defaultListShouldInclude, 'W')
+test(defaultListShouldInclude, 'M')
+
 test('returned timeframes when called with no arguments should include no other timeframes', t => {
-    t.is(defaultList.length, 0)
+    t.deepEqual([], defaultList)
 })
